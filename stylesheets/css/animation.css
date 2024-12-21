@@ -1,0 +1,40 @@
+@keyframes ticker {
+  from {
+    transform: translateZ(0);
+  }
+  to {
+    transform: translate3D(0, -100%, 0);
+  }
+}
+@keyframes animPrev {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes animPrevArrow {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 0;
+  }
+}
+@keyframes animDote {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=animation.css.map */
