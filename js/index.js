@@ -1,4 +1,3 @@
-
 const semicircle = document.querySelectorAll('.anim-x .semicircle')
 const arrow = document.querySelectorAll('.anim-x .arrow')
 const semicircle2 = document.querySelectorAll('.anim-y .semicircle')
