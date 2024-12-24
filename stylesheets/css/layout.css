@@ -4,45 +4,24 @@
   box-sizing: border-box;
 }
 
+.container {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "HelveticaNeueCyr", sans-serif;
-  font-feature-settings: "onum" off, "pnum" off, "lnum" on, "tnum" on;
-  -moz-font-feature-settings: "onum=0, pnum=0, lnum=1, tnum=1"; /* Firefox */
-  -webkit-font-feature-settings: "onum" off, "pnum" off, "lnum" on, "tnum" on; /* WebKit */
-  -o-font-feature-settings: "onum" off, "pnum" off, "lnum" on, "tnum" on;
   font-weight: 700;
+  font-style: normal;
   background: #0344DC;
-}
-
-ul, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 li {
   transition: 0.3s all;
 }
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-}
-
 .d-flex {
   display: flex;
 }
@@ -114,10 +93,8 @@ h1, h2, h3, h4, h5, h6, p {
 .main {
   padding: 6px;
 }
-.main .container {
-  overflow: hidden;
-}
-.main .block .ticker {
+
+.ticker {
   position: relative;
   overflow: hidden;
   writing-mode: vertical-lr;
@@ -132,36 +109,36 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 14px 8px;
   z-index: 5;
 }
-.main .block .ticker-item {
+.ticker-item {
   display: flex;
 }
-.main .block .ticker-item p {
+.ticker-item p {
   white-space: nowrap;
   flex-shrink: 0;
   padding: 10px 0;
   animation: ticker 2s linear infinite;
 }
-.main .block .ticker-item:hover p {
+.ticker-item:hover p {
   animation-play-state: paused;
 }
-.main .block .block-box {
+.block-box {
   position: relative;
   margin-bottom: 6px;
 }
-.main .block .block-box:last-child {
+.block-box:last-child {
   margin-bottom: 0;
 }
-.main .block .box-item .item {
+.item {
   width: 49.75%;
   position: relative;
   overflow: hidden;
 }
-.main .block .box-item .item::before {
+.item::before {
   content: "";
   display: block;
   padding-top: 100%;
 }
-.main .block .box-item .item-content {
+.item-content {
   position: absolute;
   top: 0;
   left: 0;
